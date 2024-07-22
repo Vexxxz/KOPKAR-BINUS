@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register | Kopkar Binus</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -12,6 +13,7 @@
             fontFamily: {
               inter: ["Inter"],
               nunito: ["Nunito"],
+              poppins: ["Poppins"],
             },
             textUnderlineOffset: {
               10: "10px",
@@ -22,7 +24,7 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-poppins">
     <!-- Logo -->
     <header>
       <img
@@ -31,16 +33,18 @@
         class="w-28 bg-gray-30 relative inset-20 ml-20 top-14" />
     </header>
 
-    <div class="relative font-inter">
-      <!-- Sign In -->
+    <div class="relative">
+      <!-- Sign Up -->
       <div class="absolute flex inset-y-48 left-60 flex-col gap-5">
         <p class="font-bold text-5xl">Sign up to</p>
-        <p class="font-medium text-3xl w-72">
+        <p class="font-medium text-3xl w-80">
           Koperasi Karyawan Bina Nusantara
         </p>
         <div class="w-48">
           If you have an account. You can
-          <a href="Login.html" class="text-indigo-600 font-medium inline-block underline"
+          <a
+            href="index.html"
+            class="text-indigo-600 font-medium inline-block underline"
             >Sign in here!
           </a>
         </div>
