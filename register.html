@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +6,6 @@
     <title>Register | Kopkar Binus</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="register.css" /> -->
     <script>
       tailwind.config = {
         theme: {
@@ -27,119 +25,173 @@
     </script>
   </head>
   <body class="font-poppins">
-    <div class=" max-w-[800px] my-5 mx-auto text-center bg-white shadow-mder">
-      <form action="" class="">
-        <fieldset class="">
-          <legend>Registrasi Anggota Koperasi</legend>
-          <p>Melalui Lembar Persetujuan ini, saya mewakili
-            komunitas/institusi/organisasi</p>
+    <div
+      class="flex flex-col max-w-[650px] my-5 mx-auto p-5 gap-3 bg-white shadow-md">
+      <header class="relative flex gap-2 justify-center w-full">
+        <div>
+          <img
+            src="assets/binuslogo.png"
+            alt=""
+            class="absolute left-0 max-w-[100px]" />
+        </div>
+        <div class="flex flex-col text-center mt-5">
+          <p>KOPKAR BINUS</p>
+        </div>
+      </header>
+
+      <!-- FORM REGIST -->
+      <form action="" class="mt-5">
+        <fieldset class="border p-5">
+          <legend>REGISTRATION FORM</legend>
+
+          <div class="flex flex-col gap-5">
+            <div class="flex gap-[75px] ml-1">
+              <div class="flex flex-col">
+                <label for="nip">NIP</label>
+                <input
+                  type="text"
+                  name="nip"
+                  id="nip"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan NIP" />
+              </div>
+              <div class="flex flex-col mx-1">
+                <label for="nama">NAMA</label>
+                <input
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan Nama" />
+              </div>
+            </div>
+
+            <div class="flex gap-[75px] ml-1">
+              <div class="flex flex-col">
+                <label for="area">ALAMAT KERJA</label>
+                <input
+                  type="text"
+                  name="area"
+                  id="area"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan Alamat Kerja" />
+              </div>
+              <div class="flex flex-col mx-1">
+                <label for="kampus">KAMPUS</label>
+                <input
+                  type="text"
+                  name="kampus"
+                  id="kampus"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan Kampus" />
+              </div>
+            </div>
+
+            <div>
+              <label for="ttl">TEMPAT TANGGAL LAHIR</label>
+              <input
+                type="text"
+                name="ttl"
+                id="ttl"
+                class="bg-[#7bf6ff] rounded p-1 w-full"
+                placeholder="Masukan Tempat Tanggal Lahir" />
+            </div>
+
+            <div>
+              <label for="alamat">ALAMAT</label>
+              <input
+                type="text"
+                name="alamat"
+                id="alamat"
+                class="bg-[#7bf6ff] rounded p-1 w-full"
+                placeholder="Masukan Alamat" />
+            </div>
+
+            <div class="flex gap-[75px] ml-1">
+              <div class="flex flex-col">
+                <label for="telpRumah">TELEFON RUMAH</label>
+                <input
+                  type="text"
+                  name="telpRumah"
+                  id="telpRumah"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan Nomor Telefon Rumah" />
+              </div>
+              <div class="flex flex-col">
+                <label for="nomorHP">NOMOR HP</label>
+                <input
+                  type="text"
+                  name="nomorHP"
+                  id="nomorHP"
+                  class="bg-[#7bf6ff] rounded p-1 w-60"
+                  placeholder="Masukan Nomor HP" />
+              </div>
+            </div>
+
+            <div>
+              <label for="norek">NOMOR REKENING</label>
+              <input
+                type="text"
+                name="norek"
+                id="norek"
+                class="bg-[#7bf6ff] rounded p-1 w-full"
+                placeholder="Masukan Nomor Rekening" />
+            </div>
+            <div>
+              <label for="bank">NAMA BANK</label>
+              <input
+                type="text"
+                name="bank"
+                id="bank"
+                class="bg-[#7bf6ff] rounded p-1 w-full"
+                placeholder="Masukan Nama Bank" />
+            </div>
+          </div>
         </fieldset>
       </form>
-    </div>
-    <script src="script/register.js"></script>
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register | Kopkar Binus</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              inter: ["Inter"],
-              nunito: ["Nunito"],
-              poppins: ["Poppins"],
-            },
-            textUnderlineOffset: {
-              10: "10px",
-              12: "12px",
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="font-poppins">
-    <!-- Logo -->
-    <header>
-      <img
-        src="assets/binuslogo.png"
-        alt=""
-        class="w-28 bg-gray-30 relative inset-20 ml-20 top-14" />
-    </header>
 
-    <div class="relative">
-      <!-- Sign Up -->
-      <div class="absolute flex inset-y-48 left-60 flex-col gap-5">
-        <p class="font-bold text-5xl">Sign up to</p>
-        <p class="font-medium text-3xl w-80">
-          Koperasi Karyawan Bina Nusantara
+      <!-- SYARAT & KETENTUAN -->
+      <ul class="flex flex-col gap-2">
+        Ketentuan-ketentuan pokok menjadi anggota koperasi :
+        <li>
+          1. Calon anggota adalah karyawan tetap Universitas Bina Nusantara.
+        </li>
+        <li>
+          2. Mengajukan permohonan secara tertulis, dengan mengisi formulir
+          keanggotaan yang berlaku.
+        </li>
+        <li>
+          3. Membayar simpanan pokok sebesar Rp. 100.000,- yang akan menjadi
+          milik/modal koperasi dan tidak dikembalikan lagi kepada anggota.
+        </li>
+        <li>
+          4. Anggota tetap dapat menikmati :
+          <ul class="list-disc pl-5">
+            <li>Sisa hasil usaha(SHU) bursa.</li>
+            <li>
+              Sisa hasil usaha(SHU) simpan pinjam (apabila pernah meminjam
+              dana).
+            </li>
+            <li>Fasilitas peminjaman dana.</li>
+            <li>
+              Program-program bingkisan untuk anggota yang diadakan oleh
+              koperasi.
+            </li>
+          </ul>
+        </li>
+        <li></li>
+      </ul>
+
+      <!-- CHECKBOX -->
+      <div class="flex gap-2">
+        <input type="checkbox" />
+        <p>
+          Dengan ini saya telah membaca dan paham dengan baik tentang anggaran
+          dasar koperasi, untuk itu saya berminat untuk menjadi anggota Koperasi
+          Universitas Bina Nusantara dengan kesadaran saya sendiri.
         </p>
-        <div class="w-48">
-          If you have an account. You can
-          <a
-            href="index.html"
-            class="text-indigo-600 font-medium inline-block underline"
-            >Sign in here!
-          </a>
-        </div>
-      </div>
-
-      <!-- IMAGE START-->
-      <div class="w-1/4 mx-auto py-64">
-        <img src="assets/person.png" alt="" />
-      </div>
-      <!-- IMAGE END -->
-
-      <!-- REGISTER START-->
-      <div class="absolute flex flex-col right-56 -top-0 gap-4">
-        <p class="font-medium text-4xl mb-2">Sign Up</p>
-        <input
-          type="email"
-          placeholder="Email"
-          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-80 h-16 text-lg pl-2" />
-        <input
-          type="text"
-          placeholder="Username"
-          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-80 h-16 text-lg pl-2" />
-        <input
-          type="text"
-          placeholder="Contact Number"
-          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-80 h-16 text-lg pl-2" />
-        <input
-          type="password"
-          placeholder="Password"
-          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-80 h-16 text-lg pl-2" />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-80 h-16 text-lg pl-2" />
-
-        <div class="flex flex-col gap-3">
-          <a
-            href="#"
-            class="bg-indigo-500 shadow-md shadow-indigo-500/50 text-white text-center font-medium text-lg p-3 rounded-xl transition duration-300 ease-in-out delay-0 hover:bg-indigo-600"
-            >Sign Up</a
-          >
-        </div>
-        <div class="flex flex-col items-center mt-1">
-          <p class="font-medium">or continue with</p>
-          <a href="">
-            <img src="assets/google_icon.png" alt="" />
-          </a>
-        </div>
       </div>
     </div>
-    <!-- REGISTER END -->
-
     <script src="script/register.js"></script>
   </body>
 </html>
->>>>>>> c1b8a3ffb505730cc7efbde9bc27d534df527189
