@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Kopkar Binus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+              nunito: ["Nunito"],
+              poppins: ["Poppins"],
+            },
+            textUnderlineOffset: {
+              10: "10px",
+              12: "12px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <!-- Logo -->
+    <header class="relative md:mx-[74px] md:pt-20">
+      <img src="assets/binuslogo.png" alt="" class="absolute w-28 md:ml-20" />
+    </header>
+
+    <!-- BODY 1 -->
+    <div class="bodyContainer flex flex-wrap justify-between">
+      <!-- Sign Up -->
+      <div class="signup flex flex-col md:gap-5 mt-44 sm: xl:pl-[155px]">
+        <p class="font-bold text-5xl">Sign up to</p>
+        <p class="font-medium text-3xl w-80">
+          Koperasi Karyawan Bina Nusantara
+        </p>
+        <div class="w-48">
+          If you have an account. You can
+          <a
+            href="index.html"
+            class="text-indigo-600 font-medium inline-block underline"
+            >Sign in here!
+          </a>
+        </div>
+      </div>
+      <!-- Register -->
+      <div class="register flex flex-col gap-2.5 xl:pr-40 mt-[70px] mr-10">
+        <p class="font-medium text-4xl mb-2">Sign Up</p>
+        <input
+          type="email"
+          placeholder="Email"
+          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-72 h-12 text-lg pl-2" />
+        <input
+          type="text"
+          placeholder="Username"
+          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-72 h-12 text-lg pl-2" />
+        <input
+          type="number"
+          placeholder="Contact Number"
+          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-72 h-12 text-lg pl-2" />
+        <input
+          type="password"
+          placeholder="Password"
+          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-72 h-12 text-lg pl-2" />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          class="placeholder:text-slate-400 placeholder:pl-2 bg-indigo-200 rounded-lg w-72 h-12 text-lg pl-2" />
+
+        <div class="flex flex-col gap-3">
+          <a
+            href="index.html"
+            class="bg-indigo-500 shadow-md shadow-indigo-500/50 text-white text-center font-medium text-lg p-3 rounded-xl transition duration-300 ease-in-out delay-0 hover:bg-indigo-600"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE START-->
+    <div class="w-1/4 mx-auto py-64">
+      <img src="assets/person.png" alt="" />
+    </div>
+    <!-- IMAGE END -->
+
+    <script src="script/register.js"></script>
+  </body>
+</html>
