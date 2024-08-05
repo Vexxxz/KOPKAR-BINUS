@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+              nunito: ["Nunito"],
+              poppins: ["Poppins"],
+            },
+            textUnderlineOffset: {
+              10: "10px",
+              12: "12px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <div class="flex flex-col">
+      <!-- Header -->
+      <header class="flex justify-between items-center">
+        <div class="max-w-[600px] flex items-center gap-2">
+          <img src="assets/binuslogo.png" class="w-1/6 mx-5 my-3" />
+          <p class="text-2xl pt-2">KOPKAR</p>
+        </div>
+        <div class="w-30 mr-10">
+          <a href="settings.html">
+            <img src="assets/profile.png" alt="" />
+          </a>
+        </div>
+      </header>
+
+      <!--  Body -->
+      <div class="flex flex-col mt-8 my-3 mx-5">
+        <a href="homepage.html" class="w-8 mx-10">
+          <img src="assets/left-arrow.png" class="w-9" />
+        </a>
+        <div class="w-2/3 mx-12 flex justify-between">
+          <p class="text-xl font-semibold">Notifikasi</p>
+          <button onclick="read">Mark as read</button>
+        </div>
+      </div>
+
+      <!-- Notification -->
+      <table class="mx-5">
+        <tr class="flex flex-col w-2/3 mx-12 text-lg font-semibold">
+          <td
+            class="flex items-center justify-between border border-black p-3 rounded-ss-3xl rounded-se-3xl">
+            Pinjaman anda sebesar Rp 3.000.000 sudah berhasil
+            <i class="fa-solid fa-plus"></i>
+          </td>
+          <td class="flex items-center justify-between border border-black p-3">
+            Pinjaman anda sebesar Rp 3.000.000 sudah berhasil
+            <i class="fa-solid fa-plus"></i>
+          </td>
+          <td class="flex items-center justify-between border border-black p-3">
+            Pinjaman anda sebesar Rp 3.000.000 sudah berhasil
+            <i class="fa-solid fa-plus"></i>
+          </td>
+          <td class="flex items-center justify-between border border-black p-3">
+            Pinjaman anda sebesar Rp 3.000.000 sudah berhasil
+            <i class="fa-solid fa-plus"></i>
+          </td>
+          <td
+            class="flex items-center justify-between border border-black p-3 rounded-es-3xl rounded-ee-3xl">
+            Pinjaman anda sebesar Rp 3.000.000 sudah berhasil
+            <i class="fa-solid fa-plus"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
